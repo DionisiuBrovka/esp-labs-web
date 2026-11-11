@@ -1,4 +1,4 @@
-import { join, resolve } from "node:path";
+import { join, resolve, sep } from "node:path";
 import type { Plugin } from "vite";
 import { collectFirmware, type FirmwareEnv } from "./collect.ts";
 import { detectLayout } from "./layout.ts";
@@ -41,8 +41,10 @@ export function firmwarePlugin(options: { root: string; required?: boolean }): P
     configureServer(server) {
       for (const sub of ["labs", "kit", "src", "lib", "include", "platformio.ini"])
         server.watcher.add(join(root, sub));
+      // root is a string prefix of sibling checkouts (e.g. esp-labs-web-ru), so the
+      // separator is required: without it every project file change would full-reload.
       server.watcher.on("change", (file) => {
-        if (file.startsWith(root)) server.ws.send({ type: "full-reload" });
+        if (file.startsWith(root + sep)) server.ws.send({ type: "full-reload" });
       });
       server.middlewares.use(`/${DIR}/`, (req, res, next) => {
         const name = decodeURIComponent((req.url ?? "").split("?")[0]?.replace(/^\//, "") ?? "");
