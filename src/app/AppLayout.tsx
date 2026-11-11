@@ -1,4 +1,3 @@
-/* eslint-disable i18next/no-literal-string -- literal text here is the repository name, not interface text. */
 import { Trans, useTranslation } from "react-i18next";
 import { Link, Outlet, ScrollRestoration, useLocation, useNavigation } from "react-router";
 import { BenchPill } from "@/features/bench/BenchPill";
@@ -47,10 +46,14 @@ export function AppLayout() {
       <header className={styles.top}>
         <Link to="/" className={styles.brand}>
           <span className={styles.mark} aria-hidden="true">
-            <Icon name="chip" size={20} />
+            <img
+              className={styles.emblem}
+              src={new URL("./brand/mgkct-emblem.png", document.baseURI).href}
+              alt=""
+            />
           </span>
           <span>
-            <span className={styles.eyebrow}>esp-labs</span>
+            <span className={styles.eyebrow}>{t("layout.eyebrow")}</span>
             <span className={styles.name}>
               <Trans
                 t={t}

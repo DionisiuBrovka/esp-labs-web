@@ -6,20 +6,20 @@
 :root {
   color-scheme: light;
 
-  /* Surfaces and text: a datasheet page */
-  --bg: #eef1f0;
-  --surface: #f8faf9;
-  --ink: #18221f;
-  --muted: #56645f;
-  --line: #c9d2ce;
-  --copper: #b0601f;
-  --copper-soft: #f3dfcd;
+  /* Surfaces and text: the college's ice-blue, paper-white datasheet page */
+  --bg: #f1f8ff;
+  --surface: #ffffff;
+  --ink: #212529;
+  --muted: rgba(33, 37, 41, 0.75);
+  --line: #c8c8c8;
+  --copper: #0d6efd;
+  --copper-soft: #cfe2ff;
 
-  /* The board */
-  --pcb: #14201c;
-  --pcb-edge: #2a3a34;
-  --silk: #e9efe9;
-  --silk-dim: #8fa39a;
+  /* The board: a dark navy substrate with gold pads */
+  --pcb: #10233f;
+  --pcb-edge: #26405f;
+  --silk: #e6eef8;
+  --silk-dim: #8ea3c0;
   --pad: #d4a24a;
 
   /* 3D models: drawn like an illustration, ink outlines and a soft shadow, the same in both themes */
@@ -120,11 +120,11 @@
   --syn-fn: #1d55a6;
   --syn-const: #a0257a;
   --syn-preproc: #95501a;
-  --spot: #f6e6d6;
-  --spot-edge: #d08a4c;
+  --spot: #dbe7ff;
+  --spot-edge: #0d6efd;
   --lens: #e3eefc;
   --lens-edge: #4f7fd0;
-  --term-line: #b0601f;
+  --term-line: #0d6efd;
 
   /* Type */
   --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
@@ -145,15 +145,15 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --bg: #0f1513;
-    --surface: #161e1b;
-    --ink: #e4ebe7;
-    --muted: #9aaba4;
-    --line: #2b3833;
-    --copper: #e39a5c;
-    --copper-soft: #3a2a1d;
-    --pcb: #0a110e;
-    --pcb-edge: #2f423a;
+    --bg: #0b1220;
+    --surface: #111a2c;
+    --ink: #dbe4f0;
+    --muted: #8496b3;
+    --line: #263650;
+    --copper: #5b9bff;
+    --copper-soft: #22344f;
+    --pcb: #0a1220;
+    --pcb-edge: #263650;
     --ok: #5fcf8f;
     --warn: #f0b85a;
     --danger: #ff8a80;
@@ -187,25 +187,25 @@
     --syn-fn: #8ab8ff;
     --syn-const: #ff94cf;
     --syn-preproc: #e8a86f;
-    --spot: #2e2419;
-    --spot-edge: #b8783f;
+    --spot: #22344f;
+    --spot-edge: #5b9bff;
     --lens: #172540;
     --lens-edge: #6a9be8;
-    --term-line: #e39a5c;
+    --term-line: #6aa2ff;
     --hotspot: #4fd1c5;
   }
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #0f1513;
-  --surface: #161e1b;
-  --ink: #e4ebe7;
-  --muted: #9aaba4;
-  --line: #2b3833;
-  --copper: #e39a5c;
-  --copper-soft: #3a2a1d;
-  --pcb: #0a110e;
-  --pcb-edge: #2f423a;
+  --bg: #0b1220;
+  --surface: #111a2c;
+  --ink: #dbe4f0;
+  --muted: #8496b3;
+  --line: #263650;
+  --copper: #5b9bff;
+  --copper-soft: #22344f;
+  --pcb: #0a1220;
+  --pcb-edge: #263650;
   --ok: #5fcf8f;
   --warn: #f0b85a;
   --danger: #ff8a80;
@@ -239,11 +239,11 @@
   --syn-fn: #8ab8ff;
   --syn-const: #ff94cf;
   --syn-preproc: #e8a86f;
-  --spot: #2e2419;
-  --spot-edge: #b8783f;
+  --spot: #22344f;
+  --spot-edge: #5b9bff;
   --lens: #172540;
   --lens-edge: #6a9be8;
-  --term-line: #e39a5c;
+  --term-line: #6aa2ff;
   --hotspot: #4fd1c5;
 }
 

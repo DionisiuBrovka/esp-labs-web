@@ -74,6 +74,18 @@
 .title span {
   color: var(--copper);
 }
+/* The Russian title word "МИКРОЭЛЕКТРОНИКА" is longer than the English one, so at the
+   English size it would spill out of the brand column into the HUD cards. Scale it down
+   (it wraps onto two lines, as the English title does) to fit the column: the widest word
+   is ~11.75em wide, the brand column is ~441px wide at >=1100 and ~vw-48 below. */
+:global(html[lang="ru"]) .title {
+  font-size: clamp(24px, 7.2vw, 92px);
+}
+@media (min-width: 1100px) {
+  :global(html[lang="ru"]) .title {
+    font-size: clamp(24px, 3vw, 37px);
+  }
+}
 .motto {
   display: flex;
   flex-wrap: wrap;

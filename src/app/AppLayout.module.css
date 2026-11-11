@@ -64,12 +64,17 @@
 .mark {
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 42px;
   border-radius: 10px;
-  background: var(--pcb);
-  color: var(--pad);
-  box-shadow: inset 0 0 0 2px var(--pcb-edge);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+/* The college emblem (a colour cube on transparent), sitting in the white brand tile. */
+.emblem {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 .eyebrow {
   display: block;

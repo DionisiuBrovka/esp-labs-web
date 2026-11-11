@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "ESP32-S3 Bench Guide",
+    "title": "ESP32 Microelectronics Lab · MGKCT",
     "loading": "Loading the bench guide…",
     "loadingSettings": "Loading settings…"
   },
@@ -13,7 +13,8 @@
   "layout": {
     "skip": "Skip to content",
     "loading": "Loading",
-    "brand": "ESP32-S3 <part>bench guide</part>",
+    "eyebrow": "Minsk State College of Digital Technologies",
+    "brand": "ESP32 · <part>Microelectronics lab</part>",
     "sections": "Sections",
     "nav": {
       "labs": "Labs",
@@ -21,18 +22,18 @@
       "bench": "Bench",
       "settings": "Settings"
     },
-    "footnote": "Pin layout follows the Espressif DevKitC-1 v1.0. Clones are nearly identical, but the labels printed on your board always win. Your ticks are saved in this browser only.",
+    "footnote": "A microelectronics lab for studying the ESP32, from the Minsk State College of Digital Technologies. Pin layout follows the Espressif DevKitC-1 v1.0. Clones are nearly identical, but the labels printed on your board always win. Your ticks are saved in this browser only.",
     "partsLink": "The parts library",
     "new": "New"
   },
   "titles": {
-    "labs": "Labs · ESP32-S3 Bench Guide",
-    "lesson": "{{id}} · {{title}} · ESP32-S3 Bench Guide",
-    "code": "{{id}} code · {{title}} · ESP32-S3 Bench Guide",
-    "log": "Bench log · ESP32-S3 Bench Guide",
-    "parts": "Parts library · ESP32-S3 Bench Guide",
-    "settings": "Settings · ESP32-S3 Bench Guide",
-    "chip": "{{page}} · Datasheet · ESP32-S3 Bench Guide"
+    "labs": "Labs · ESP32 Microelectronics Lab",
+    "lesson": "{{id}} · {{title}} · ESP32 Microelectronics Lab",
+    "code": "{{id}} code · {{title}} · ESP32 Microelectronics Lab",
+    "log": "Bench log · ESP32 Microelectronics Lab",
+    "parts": "Parts library · ESP32 Microelectronics Lab",
+    "settings": "Settings · ESP32 Microelectronics Lab",
+    "chip": "{{page}} · Datasheet · ESP32 Microelectronics Lab"
   },
   "routeError": {
     "code": "Error",
