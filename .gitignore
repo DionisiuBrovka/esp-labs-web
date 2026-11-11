@@ -14,3 +14,5 @@ docs-llm/esp32-s3/*
 !docs-llm/esp32-s3/images/
 .vercel
 .env*
+# Playwright MCP screenshot/console scratch output
+.playwright-mcp/
