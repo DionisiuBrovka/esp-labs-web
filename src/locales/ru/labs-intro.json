@@ -1,0 +1,16 @@
+{
+  "usb": {
+    "caption": "Ваш реальный результат. esptool подтвердил ESP32-S3 rev v0.2 с 8 МБ PSRAM и 16 МБ flash за этим портом."
+  },
+  "hello": {
+    "caption": "RGB-светодиод на схеме платы мигает так же, как и настоящий."
+  },
+  "led": {
+    "diagram": "БREADBOARD: GPIO 4 → резистор → LED → земля",
+    "gndRail": "Линия GND",
+    "legs": "LED: длинная нога (+) слева, короткая нога (−) к GND",
+    "duty": "дuty {{duty}} / 255",
+    "terminal": "$ uv run pio device monitor   (попробуйте вводить)",
+    "quick": "Быстрые команды"
+  }
+}
